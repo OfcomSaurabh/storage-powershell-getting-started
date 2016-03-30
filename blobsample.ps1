@@ -4,12 +4,15 @@
 
 # Set the name of selected subscription.
 # To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two lines:
-	# Add-AzureAccount
-	# Get-AzureSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
-$SubscriptionName="Your Subscription Name"
+	# Add-AzureRMAccount
+	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
+$SubscriptionName="Subscription Name"
+
+# Provide the name of your resource group
+$ResourceGroupName="Resource Group Name"
 
 # Provide the name of your Storage account.
-$StorageAccountName="Your Account Name"
+$StorageAccountName="Storage Account Name"
 
 # Provide a name for your new container.
 $ContainerName = "Container Name"
@@ -24,13 +27,13 @@ $FileToUpload = "C:\full\path\to\file.jpg"
 $DestinationFolder = "C:\DownloadedBlobs"
 
 # Add your Azure account to the local PowerShell environment.
-Add-AzureAccount
+Add-AzureRMAccount
 
 # Set default Azure subscription.
-Select-AzureSubscription -SubscriptionName $SubscriptionName –Default
+Get-AzureRmSubscription -SubscriptionName $SubscriptionName | Select-AzureRmSubscription
 
 # Set default Storage account.
-Set-AzureSubscription -CurrentStorageAccountName $StorageAccountName -SubscriptionName $SubscriptionName
+Set-AzureRmCurrentStorageAccount -ResourceGroupName $ResourceGroupName -StorageAccountName $StorageAccountName
 
 # 1. Create a new container.
 New-AzureStorageContainer -Name $ContainerName -Permission Off
@@ -41,9 +44,9 @@ Set-AzureStorageBlobContent -Container $ContainerName -File $FileToUpload -Blob 
 # 3. List all blobs in a container.
 Get-AzureStorageBlob -Container $ContainerName
 
-# 4. Download blobs from the container:
+# 4. Download blob:
 
-# Get reference to a blob
+# Get reference to blob
 $blob = Get-AzureStorageBlob -Container $ContainerName -Blob $BlobName
 
 # Create the destination directory.
