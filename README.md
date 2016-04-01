@@ -15,7 +15,7 @@ get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 
 1. Download and install [Azure PowerShell](http://go.microsoft.com/?linkid=9811175&clcid=0x409).
 2. Start Windows PowerShell Integrated Scripting Environment (ISE) in **Administrator Mode**
-3. Either
+3. At this point, you can either:
   - Create a new script and copy and paste a script from this repo into the new file: Click File > New
   - Or download this repo and open a script from this repo: Click File > Open
 4. Provide the appropriate values for each variable at the beginning of the script (e.g. $SubscriptionName, $StorageAccountName, etc.)
