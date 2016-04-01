@@ -14,7 +14,7 @@ get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 ## Running this sample
 
 1. Download and install [Azure PowerShell](http://go.microsoft.com/?linkid=9811175&clcid=0x409).
-2. Start Windows PowerShell Integrated Scripting Environment (ISE)
+2. Start Windows PowerShell Integrated Scripting Environment (ISE) in **Administrator Mode**
 3. At this point you can either
   - Create a new script and copy and paste a script from this repo into the new file: Click File > New
   - Or download this repo and open a script from this repo: Click File > Open
