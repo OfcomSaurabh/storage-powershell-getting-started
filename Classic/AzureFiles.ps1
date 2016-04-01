@@ -1,4 +1,4 @@
-﻿#
+#
 # Azure Storage File Sample - Demonstrates how to use the File Storage service.
 # For documentation, refer to "http://go.microsoft.com/fwlink/?LinkId=785077"
 # For API reference, refer to "http://go.microsoft.com/fwlink/?LinkId=785079"
@@ -52,7 +52,7 @@ Get-AzureStorageFileContent -ShareName $ShareName -Path $SourcePath -Destination
 
 # 6. Delete file share.
 # User will be prompted to confim the deletion.
-Remove-AzureStorageShare -Name $ShareName 
+Remove-AzureStorageShare -Name $ShareName
 
 # 7. Delete the downloaded file.
 Remove-Item $DestinationPath
