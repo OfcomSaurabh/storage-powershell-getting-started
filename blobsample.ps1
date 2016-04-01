@@ -3,7 +3,7 @@
 # Blobs can be accessed from anywhere in the world via HTTP or HTTPS.
 
 # Set the name of selected subscription.
-# To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two lines:
+# To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two commands:
 	# Add-AzureRMAccount
 	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
 $SubscriptionName="Subscription Name"

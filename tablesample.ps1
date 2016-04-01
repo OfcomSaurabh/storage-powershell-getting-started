@@ -2,6 +2,9 @@
 # including creating, listing, and deleting tables.
 
 # Set the name of selected subscription.
+# To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two commands:
+	# Add-AzureRMAccount
+	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
 $SubscriptionName="Subscription Name"
 
 # Provide the name of your resource group
@@ -29,4 +32,4 @@ New-AzureStorageTable -Name $TableName
 Get-AzureStorageTable
 
 # 3. Remove table
-# Remove-AzureStorageTable $TableName
+# Remove-AzureStorageTable -Name $TableName

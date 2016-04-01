@@ -3,6 +3,9 @@
 # creating, listing, and deleting queues.
 
 # Set the name of selected subscription.
+# To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two commands:
+	# Add-AzureRMAccount
+	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
 $SubscriptionName="Subscription Name"
 
 # Provide the name of your resource group
@@ -30,4 +33,4 @@ New-AzureStorageQueue -Name $QueueName
 Get-AzureStorageQueue
 
 # 3. Remove queue
-# Remove-AzureStorageQueue $QueueName
+# Remove-AzureStorageQueue -Name $QueueName
