@@ -3,7 +3,7 @@
 # creating, listing, and deleting queues.
 
 # Set the name of selected subscription.
-# To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two commands:
+# To Retrieve the name of your subscription, run the following two commands:
 	# Add-AzureRMAccount
 	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
 $SubscriptionName="Subscription Name"
