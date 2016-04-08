@@ -6,25 +6,25 @@
 # To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two commands:
 	# Add-AzureRMAccount
 	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
-$SubscriptionName="Subscription Name"
+$SubscriptionName="<Subscription Name>"
 
 # Provide the name of your resource group
-$ResourceGroupName="Resource Group Name"
+$ResourceGroupName="<Resource Group Name>"
 
 # Provide the name of your Storage account.
-$StorageAccountName="Storage Account Name"
+$StorageAccountName="<Storage Account Name>"
 
 # Provide a name for your new container.
-$ContainerName = "Container Name"
+$ContainerName = "<Container Name>"
 
 # Provide a name for your new blob
-$BlobName = "Blob Name"
+$BlobName = "<Blob Name>"
 
 # Provide the full path to a file you want to upload.
-$FileToUpload = "C:\full\path\to\file.jpg"
+$FileToUpload = "<C:\full\path\to\file.jpg>"
 
 # Provide the full path to a directory you wish to use for downloaded blobs.
-$DestinationFolder = "C:\DownloadedBlobs"
+$DestinationFolder = "<C:\DownloadedBlobs>"
 
 # Add your Azure account to the local PowerShell environment.
 Add-AzureRMAccount
