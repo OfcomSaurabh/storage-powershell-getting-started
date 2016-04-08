@@ -6,7 +6,7 @@ author: micurd-msft
 
 # Getting Started with Azure Storage in PowerShell
 
-Demonstrates how to use the Azure Storage service in Powershell.
+Demonstrates how to use the Azure Storage service in PowerShell (v1.3.0).
 
 If you don't have a Microsoft Azure subscription you can
 get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
