@@ -6,7 +6,9 @@ author: micurd-msft
 
 # Getting Started with Azure Storage in PowerShell
 
-Demonstrates how to use the Azure Storage service in Powershell.
+Demonstrates how to use the Azure Storage service in Azure PowerShell (v1.3.0).
+
+> Azure has two different deployment models for creating and working with resources:  [Azure Resource Manager (ARM) and Classic](../articles/resource-manager-deployment-model.md).  This repo provides sample scripts for both models. However, Microsoft recommends ARM for most new deployments.
 
 If you don't have a Microsoft Azure subscription you can
 get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
@@ -17,12 +19,12 @@ get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 2. Start Windows PowerShell Integrated Scripting Environment (ISE) in **Administrator Mode**
 3. At this point, you can either:
   - Create a new script and copy and paste a script from this repo into the new file: Click File > New
-  - Or download this repo and open a script from this repo: Click File > Open
-4. Provide the appropriate values for each variable at the beginning of the script (e.g. $SubscriptionName, $StorageAccountName, etc.)
+  - Or download/clone this repo and open a script from this repo: Click File > Open
+4. Provide the appropriate values for each variable (e.g. "Subscription Name", "Storage Account Name", etc.). Note: The angled brackets should not be included in the values you provide.
 5. Run the script by pressing F5 or clicking the "Run Script" icon.
 
 ## More information
-- [Introduction to Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-introduction/)
-- [Using Azure PowerShell with Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-powershell-guide-full/)
-- [Azure Storage Manager Cmdlets](https://msdn.microsoft.com/en-us/library/azure/mt607151.aspx)
-- [Azure Storage Cmdlets](https://msdn.microsoft.com/library/azure/dn806401.aspx)
+- [Introduction to Azure Storage](http://go.microsoft.com/fwlink/?LinkId=786319)
+- [Using Azure PowerShell with Azure Storage](http://go.microsoft.com/fwlink/?LinkId=786321)
+- [Azure Storage Manager Cmdlets](http://go.microsoft.com/fwlink/?LinkId=786324)
+- [Azure Storage Cmdlets](http://go.microsoft.com/fwlink/?LinkId=786320)

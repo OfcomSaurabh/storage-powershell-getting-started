@@ -1,5 +1,7 @@
-# Azure Table Service Sample - Demonstrate how to perform common tasks using the Microsoft Azure Table storage
+# Azure Table Service Sample - Demonstrates how to perform common tasks using the Microsoft Azure Table storage
 # including creating, listing, and deleting tables.
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786321
+# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
 
 # Set the name of selected subscription.
 # To Retrieve the name of your subscription, run the following two commands:
@@ -32,4 +34,4 @@ New-AzureStorageTable -Name $TableName
 Get-AzureStorageTable
 
 # 3. Remove table
-# Remove-AzureStorageTable -Name $TableName
+Remove-AzureStorageTable -Name $TableName

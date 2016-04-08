@@ -1,7 +1,6 @@
-#
 # Azure Storage File Sample - Demonstrates how to use the File Storage service.
-# For documentation, refer to "http://go.microsoft.com/fwlink/?LinkId=785077"
-# For API reference, refer to "http://go.microsoft.com/fwlink/?LinkId=785079"
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=785077
+# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
 
 # Set the name of selected subscription.
 # To Retrieve the name of your subscription, run the following on Azure PowerShell:
@@ -13,10 +12,10 @@ $SubscriptionName="<Subscription Name>"
 $StorageAccountName="<Storage Account Name>"
 
 # Provide a name for your new Azure Files share.
-$ShareName = "demoshare"
+$ShareName = "<Share Name>"
 
 # Provide a name for your new directory.
-$DirectoryName = "demodirectory"
+$DirectoryName = "<Directory Name>"
 
 # Set the full path to file you want to upload to new Azure Files share.
 $FileToUpload = "AzureFiles.ps1"

@@ -1,33 +1,33 @@
 # Azure Storage File Sample - Demonstrates how to use the File Storage service.
-# For documentation, refer to "http://go.microsoft.com/fwlink/?LinkId=785077"
-# For API reference, refer to "http://go.microsoft.com/fwlink/?LinkId=785079"
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=785077
+# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=785079
 
 # Set the name of selected subscription.
 # To Retrieve the name of your subscription, run the following on Azure PowerShell:
 	# Add-AzureRMAccount
 	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
-$SubscriptionName="Subscription Name"
+$SubscriptionName="<Subscription Name>"
 
 # Provide the name of your resource group
-$ResourceGroupName="Resource Group Name"
+$ResourceGroupName="<Resource Group Name>"
 
 # Enter the name of your storage account. It must be all be lowercase.
-$StorageAccountName="Storage Account Name"
+$StorageAccountName="<Storage Account Name>"
 
 # Provide a name for your new Azure Files share.
-$ShareName = "demoshare"
+$ShareName = "<Share Name>"
 
 # Provide a name for your new directory.
-$DirectoryName = "demodirectory"
+$DirectoryName = "<Directory Name>"
 
 # Provide the full path to file you want to upload to new Azure Files share.
-$FullPathToFile = "C:\full\path\to\file.jpg"
+$FullPathToFile = "<C:\full\path\to\file>"
 
-# Provide the name of the file. This should be an exact match to the file name in $FullPathToFile
-$FileName = "file.jpg"
+# Provide the name of the file. NOTE: This should be an exact match to the file name you've provided in $FullPathToFile
+$FileName = "<file>"
 
 # Provide the full path for a new local directory.
-$DestinationPath = "C:\DownloadedFiles"
+$DestinationPath = "<C:\DownloadedFiles>"
 
 # Create a new local directory
 New-Item $DestinationPath -type directory

@@ -1,4 +1,6 @@
-# Azure Storage Resource Provider Sample - Demonstrate how to create and manage storage accounts using Storage Resource Provider.
+# Azure Storage Management Sample - Demonstrates how to create and manage storage accounts.
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786321
+# For Cmdlet reference, refer to http://go.microsoft.com/fwlink/?LinkId=786324
 
 # Set the name of selected subscription.
 # To retrieve the name of your subscription, run the following two commands:
@@ -60,5 +62,5 @@ If (-Not $StorageAccountNameExists.NameAvailable) {
   Set-AzureRmStorageAccount -ResourceGroupName $ResourceGroupName -AccountName $StorageAccountName -Type $NewType
 
   # Delete Storage account
-  # Remove-AzureRmStorageAccount $StorageAccountName
+  Remove-AzureRmStorageAccount $StorageAccountName
 }

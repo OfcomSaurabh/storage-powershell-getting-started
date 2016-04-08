@@ -1,6 +1,7 @@
-# Azure Storage Blob Sample - Demonstrate how to use the Blob Storage service.
+# Azure Storage Blob Sample - Demonstrates how to use the Blob Storage service.
 # Blob storage stores unstructured data such as text, binary data, documents or media files.
-# Blobs can be accessed from anywhere in the world via HTTP or HTTPS.
+# For more documentation, refer to http://go.microsoft.com/fwlink/?LinkId=786321
+# For Cmdlet reference, see http://go.microsoft.com/fwlink/?LinkId=786320
 
 # Set the name of selected subscription.
 # To Retrieve the name of your subscription, open a separate Azure PowerShell window and run the following two commands:
@@ -62,4 +63,4 @@ $snap = $blob.ICloudBlob.CreateSnapshot()
 Get-AzureStorageBlob -Container $ContainerName | Where-Object { $_.ICloudBlob.IsSnapshot -and $_.Name -eq $BlobName }
 
 # 7. Delete blob
-# Remove-AzureStorageBlob -Blob $BlobName -Container $ContainerName
+Remove-AzureStorageBlob -Blob $BlobName -Container $ContainerName
