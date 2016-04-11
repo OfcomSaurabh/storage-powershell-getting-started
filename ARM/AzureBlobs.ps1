@@ -62,5 +62,5 @@ $snap = $blob.ICloudBlob.CreateSnapshot()
 # 6. List blob snapshots
 Get-AzureStorageBlob -Container $ContainerName | Where-Object { $_.ICloudBlob.IsSnapshot -and $_.Name -eq $BlobName }
 
-# 7. Delete blob
-Remove-AzureStorageBlob -Blob $BlobName -Container $ContainerName
+# 7. Delete container
+Remove-AzureStorageContainer -Name $ContainerName
