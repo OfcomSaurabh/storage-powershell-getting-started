@@ -11,7 +11,7 @@ $SubscriptionName="<Subscription Name>"
 # Provide the name of your resource group
 $ResourceGroupName="<Resource Group Name>"
 
-# Enter the name of your storage account. It must be all be lowercase.
+# Provide the name of your Storage account.
 $StorageAccountName="<Storage Account Name>"
 
 # Provide a name for your new Azure Files share.
@@ -20,10 +20,10 @@ $ShareName = "<Share Name>"
 # Provide a name for your new directory.
 $DirectoryName = "<Directory Name>"
 
-# Provide the full path to file you want to upload to new Azure Files share.
+# Provide the full path to the file you want to upload.
 $FullPathToFile = "<C:\full\path\to\file>"
 
-# Provide the name of the file. NOTE: This should be an exact match to the file name you've provided in $FullPathToFile
+# Provide the name of the file. NOTE: This should be an exact match to the file name you've provided in $FullPathToFile.
 $FileName = "<file>"
 
 # Provide the full path for a new local directory.

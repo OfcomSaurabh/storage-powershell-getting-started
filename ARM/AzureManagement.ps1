@@ -8,7 +8,7 @@
 	# Get-AzureRMSubscription | Format-Table SubscriptionName, IsDefault, IsCurrent, CurrentStorageAccountName
 $SubscriptionName="<Subscription Name>"
 
-# Provide the name of your resource group
+# Provide the name of the resource group that will be created.
 $ResourceGroupName="<Resource Group Name>"
 
 # Provide the name of the Storage account that will be created.
@@ -19,14 +19,14 @@ $StorageAccountName="<Storage Account Name>"
   # Standard_ZRS (zone-redundant storage)
   # Standard_GRS (geo-redundant storage)
   # Standard_RAGRS (read access geo-redundant storage)
-  # Premium_LRS
+  # Premium_LRS (premium locally-redundant storage)
 $Type = "<Standard_GRS>"
 $NewType = "<Standard_RAGRS>"
 
 # Specify the location of the Storage account to create.
 # To view available locations for Storage, run the following command:
   # ((Get-AzureRmResourceProvider -ProviderNamespace Microsoft.Storage).ResourceTypes | Where-Object ResourceTypeName -eq storageAccounts).Locations
-$Location = "<West US>"
+$Location = "<Location>"
 
 # Add your Azure account to the local PowerShell environment.
 Add-AzureRMAccount
