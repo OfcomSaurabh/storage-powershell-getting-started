@@ -57,6 +57,12 @@ If (-Not $StorageAccountNameExists.NameAvailable) {
 
   # Get access keys for Azure Storage account.
   Get-AzureRmStorageAccountKey -ResourceGroupName $ResourceGroupName -Name $StorageAccountName
+  
+  # Regenerate access key 1 for Azure Storage account.
+  New-AzureRmStorageAccountKey -ResourceGroupName $ResourceGroupName -AccountName $StorageAccountName -KeyName "key1"
+  
+  # Get access key 1 for Azure Storage account.
+  (Get-AzureRmStorageAccountKey -ResourceGroupName $ResourceGroupName -Name $StorageAccountName).Value[0]
 
   # Update Storage account type
   Set-AzureRmStorageAccount -ResourceGroupName $ResourceGroupName -AccountName $StorageAccountName -Type $NewType
