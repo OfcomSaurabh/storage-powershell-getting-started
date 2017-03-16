@@ -1,7 +1,7 @@
 ---
 services: storage
 platforms: powershell
-author: micurd-msft
+author: seguler
 ---
 
 # Getting Started with Azure Storage in PowerShell
